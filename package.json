@@ -1,0 +1,42 @@
+{
+  "name": "kui",
+  "version": "1.0.0",
+  "packageManager": "^npm@9.0.0",
+  "description": "A fun react ui component library! And React components implementation",
+  "title": "Kui Design Library",
+  "keywords": [
+    "kui",
+    "component",
+    "components",
+    "design",
+    "framework",
+    "frontend",
+    "react",
+    "react-component",
+    "ui"
+  ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs":  "tsc --module CommonJS --outDir dist/cjs"
+  },
+  "author": "koushik-hait",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.35",
+    "@types/react-dom": "^18.0.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
